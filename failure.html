@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error</title>
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/ad68a516ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      body {
+        background-color: #2b75e8;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10%;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 10px 0;
+      }
+
+      .fa-exclamation-circle {
+        font-size: 10rem;
+      }
+
+      button {
+        color: #2b75e8;
+        background-color: #fff;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+        transition: 0.5s;
+      }
+
+      button:hover {
+        color: #fff;
+        background-color: #5b95f1;
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 578px) {
+        h1 {
+          font-size: 25px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+
+        .fa-exclamation-circle {
+          font-size: 8rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <i class="fas fa-exclamation-circle"></i>
+    <h1>Something went wrong.</h1>
+    <p>Please try again later.</p>
+    <form action="/failure" method="post">
+      <button><i class="fas fa-home"></i> Home</button>
+    </form>
+  </body>
+</html>
