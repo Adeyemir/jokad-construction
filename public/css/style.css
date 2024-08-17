@@ -959,12 +959,7 @@ textarea#comment.message-bt::placeholder {
 }
 
 .send_bt {
-    width: 170px;
-    float: left;
-}
-
-.send_bt a {
-    width: 100%;
+    width: 180px;
     text-align: center;
     font-size: 18px;
     color: #ffffff;
@@ -977,7 +972,7 @@ textarea#comment.message-bt::placeholder {
     border-radius: 40px;
 }
 
-.send_bt a:hover {
+.send_bt:hover {
     color: #ffffff;
     background-color: #252525;
 }
