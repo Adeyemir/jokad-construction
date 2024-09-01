@@ -78,6 +78,10 @@ app.post("/success", (_req, res) => {
     res.redirect("/");
 });
 
+app.get("/ping", (_req, res) => {
+    res.send("pong")
+})
+
 app.listen(port, () => {
     console.log(`Server started at port ${port}. Visit http://localhost:${port}`);
 });
